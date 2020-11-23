@@ -1,0 +1,194 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+}
+.contacts {
+	
+	&__title {}
+
+	&__row {
+		margin: 40px 0px 0px 0px;
+	}
+
+	&__item {}
+}
+
+.contacts-item {
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 10px 15px;
+	margin: 0px 0px 15px 0px;
+	&:last-child {
+		margin: 0;
+	}
+	&__header {}
+
+	&__content {}
+}
+
+.contacts-item-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+	&__title {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__img {
+		svg {
+			-webkit-transition: all .3s ease 0s;
+			-o-transition: all .3s ease 0s;
+			transition: all .3s ease 0s;
+		}
+	}
+}
+.contacts-item-header.openitem {
+	.contacts-item-header__img {
+		svg {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.contacts-item-content {
+
+	&__phone {}
+}
+
+.telephone {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0px 0px 7px 0px;
+	&:last-child {
+		margin: 0;
+	}
+	&__title {
+		margin: 0px 0px 8px 0px;
+		font-weight: 700;
+	}
+
+	&__number {
+		color: rgb(28, 13, 163);
+	}
+}
+
+.text {}
+.contacts-item-content {
+	height: auto;
+	max-height: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .5s, ease .2s;
+}
+
+.curr {
+	max-height: 310px;
+	visibility: visible;
+	opacity: 1;
+}
+.contacts-item-header.curr-img {
+	.contacts-item-header__img {
+		svg {
+			transform: rotate(180deg);
+		}
+	}
+}
+.lock {
+	max-height: 310px;
+	visibility: visible;
+	opacity: 1;
+}
+button {
+	@media (max-width: 430px){
+		width: 49%;
+		margin: 0px 0px 10px 0px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: 430px){
+	.curr {
+		max-height: 350px;
+	}
+	.lock {
+		max-height: 365px;
+	}
+	.contacts-item {
+		padding: 10px;
+	}
+}
+.contacts-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width:430px){
+		padding: 0 10px;
+	}
+}
+.contacts-top__add-link {
+	z-index: 4;
+	cursor: pointer;
+	svg {
+		width: 20px;
+		height: 20px;
+		transition: all 0.3s ease 0s;
+		path {
+			transition: all 0.2s ease 0s;
+		}
+		&:hover {
+			path {
+				fill: rgb(99, 98, 98);
+			}
+		}
+	}
+	&.active {
+		svg {
+			transform: rotate(45deg);
+		}
+	}
+}
+.contacts-top {
+
+	&__newcontact {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		top: -110%;
+		left: auto;
+		padding: 50px 10px 0px 10px;
+		overflow: auto;
+		transition: all .3s ease 0s;
+		z-index: 3;
+		width: 100%;
+		max-width: 768px;
+		margin: 0 auto;
+		&.active {
+			top: 0;
+		}
+	}
+
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	&__input {
+		max-width: 340px;
+		margin: 0px 0px 10px 0px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	button {
+		max-width: 340px;
+	}
+}
