@@ -12,14 +12,14 @@ body {
   margin: 40px 0px 0px 0px;
 }
 
-.contacts-item {
+.contacts__item {
   background-color: #eee;
   border-radius: 10px;
   padding: 10px 15px;
   margin: 0px 0px 15px 0px;
 }
 
-.contacts-item:last-child {
+.contacts__item:last-child {
   margin: 0;
 }
 
