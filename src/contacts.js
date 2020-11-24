@@ -73,8 +73,8 @@ class Contacts {
 				<div class="telephone__number" data-name="website">${item.website}</div>
 			</div>
 			<div class="contacts-item-content__phone telephone">
-				<div class="telephone__title">Никнейм</div>
-				<div class="telephone__number text" data-name="username">${item.username}</div>
+				<div class="telephone__title">Заметки</div>
+				<div class="telephone__number text" data-name="notes">${item.notes}</div>
 			</div>
 			<button class="contacts-item-content__edit" >
 			<i class="fa fa-pencil" aria-hidden="true"></i> Изменить</button>

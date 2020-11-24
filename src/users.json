@@ -1,7 +1,8 @@
 [{
 		"name": "Anna Conroy",
 		"username": "Earline.Crona",
-		"email": "Joaquin_Farrell79@yahoo.com",
+    "email": "Joaquin_Farrell79@yahoo.com",
+    "notes": "Ходит в такое кофе и ест такую еду.",
 		"address": {
 			"streetA": "Kellie Mill",
 			"streetB": "98907 Coleman Island",
@@ -86,7 +87,8 @@
 	{
 		"name": "Britney Spinka",
 		"username": "Dulce.Bartell",
-		"email": "Alexane.Anderson@yahoo.com",
+    "email": "Alexane.Anderson@yahoo.com",
+    "notes": "Ходит в такое кофе и ест такую еду.",
 		"address": {
 			"streetA": "Robel Walks",
 			"streetB": "39170 Ansel Via",
@@ -172,6 +174,7 @@
     "name": "Jammie Jacobs V",
     "username": "Leila62",
     "email": "Dwight7@gmail.com",
+    "notes": "Ходит в такое кофе и ест такую еду.",
     "address": {
       "streetA": "Ramon Lock",
       "streetB": "88150 Jaylin Rest",
@@ -259,6 +262,7 @@
     "name": "Hans Sawayn",
     "username": "Johnson71",
     "email": "Leora.Skiles@gmail.com",
+    "notes": "Ходит в такое кофе и ест такую еду.",
     "address": {
       "streetA": "Haven Spurs",
       "streetB": "1328 Lehner Corner",
